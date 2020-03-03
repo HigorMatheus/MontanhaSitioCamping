@@ -1,0 +1,51 @@
+base-de-cores {
+    color: #387df2;
+    color: #0d0f0e;
+    color: #707172;
+    color: #403d3b;
+    color: #f3f3f3;
+    color: #4369bd;
+    color: #eee;
+    color: #c9c7c7;
+}
+body{
+    
+    background-color: #0d0f0e;
+    align-items: flex-end;
+}
+
+.inicio{
+    display: block;
+     background-image: url("../img/montanhasitio/lagos.jpg") ; 
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    /* opacity: 35%; */
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    color:#eee;
+    
+   
+}
+
+.logo{
+    max-width: 150px;
+}
+
+.iten-nav{
+    width: 150px;
+    height: 150px;
+    display: initial ;
+   
+    
+ 
+}
+
+.explore{
+    
+    mix-blend-mode: difference;
+}
+
+.icon{
+    size: 30px;
+}
