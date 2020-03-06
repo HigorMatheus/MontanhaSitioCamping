@@ -20,6 +20,7 @@ body{
     background-image:   url("../img/montanhasitio/395b0302-13e1-4ae4-a576-fe6f1c9b1b13.jpg") ; 
     background-repeat: no-repeat; 
     background-size: 100%;
+    /* background: opacity: 35%; */
     /* opacity: 35%; */
     margin: 0;
     width: 100%;
@@ -80,7 +81,6 @@ header nav ul li a{
 .inforatividades{
     background-color: #c9c7c7;
     display: inline-flex;
-    /* opacity: 99%; */
     width: 100%;
     text-align: center;
 }
@@ -94,8 +94,43 @@ header nav ul li a{
     background-image: url("../img/montanhasitio/IMG-20160515-WA0006.jpg") ; 
     background-repeat: no-repeat; 
     background-size: 100%;
-    /* opacity: 35%; */
     height: 100vh;
     width: 100%;
     
 }
+.inforcamping{
+    background-color: #c9c7c7;
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+}
+.camping{
+    
+    background-image: url("../img/montanhasitio/IMG-20160708-WA0011.jpg") ; 
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    
+}
+.inforlazer{
+    background-color: #c9c7c7;
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+}
+
+
+.lazer{
+    
+    background-image: url("../img/montanhasitio/IMG-20160708-WA0009.jpg") ; 
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.inform{
+     /* background-color: #c9c7c7; */
+} 
