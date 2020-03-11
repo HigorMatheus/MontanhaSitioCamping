@@ -1,0 +1,65 @@
+base-de-cores {
+    color: #387df2;
+    color: #0d0f0e;
+    color: #707172;
+    color: #403d3b;
+    color: #f3f3f3;
+    color: #4369bd;
+    color: #eee;
+    color: #c9c7c7;
+}
+body{
+    margin: 0;
+}
+
+.inicio{
+    background-size: 375px;
+     background-image: url(../img/montanhasitio/bg02.jpg); */
+    /* background-color: black; */
+     
+}
+
+.inicio nav div img{
+    width: 100px;
+}
+
+.nav{
+    display: inline-flex ;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+.explore{
+    margin-top: 0;
+    text-align: center;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: blanchedalmond;
+}
+.fa-hiking{
+    margin-top: 25px;
+    font-size: 30px;
+}
+.fa-campground{
+    font-size: 30px;
+}
+.fa-swimmer{
+    font-size: 30px;
+}
+.atividades{
+    text-align: center;
+}
+
+.camping{
+    text-align: center;
+}
+
+.lazer{
+    text-align: center;
+}
+
+.contato{
+    text-align: center;
+}

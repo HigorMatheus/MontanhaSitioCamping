@@ -17,15 +17,17 @@ body{
 /* HOME */
 .inicio{
     display: block;
-    background-image:   url("../img/montanhasitio/395b0302-13e1-4ae4-a576-fe6f1c9b1b13.jpg") ; 
+    background-image:   url("../img/montanhasitio/bg1.jpg") ; 
     background-repeat: no-repeat; 
     background-size: 100%;
     /* background: opacity: 35%; */
-    /* opacity: 35%; */
+    /* opacity: 35%;
+    z-index: 6; */
     margin: 0;
     width: 100%;
     height: 100vh;
     color:#eee;
+    font-family: Tahoma, Verdana, Geneva,  sans-serif;
 }
 header nav ul{
     list-style: none;
@@ -38,7 +40,7 @@ header nav ul li{
     text-align: center;
     text-justify: auto;
     margin: 5px;
-    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: #eee bold  30px ;
     color: #eee;
 }
@@ -64,6 +66,7 @@ header nav ul li a{
      font-size: 100px;
      margin: 0 0 0 0;
     /* mix-blend-mode: difference; */
+    font-family: Tahoma,  Verdana , Geneva, sans-serif;
 }
 .fa-hiking{
     font-size: 100px;
@@ -87,7 +90,8 @@ header nav ul li a{
 }
 .infor{
     text-align: center;
-    width: 50vh;
+    width: 100%;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .atividades{
@@ -135,8 +139,6 @@ header nav ul li a{
 .contato{
     background-color: #c9c7c7;
     height: 50vh;
-   
-    
 }
 
 .contato h1{
@@ -145,7 +147,7 @@ header nav ul li a{
 }
 
 .contato form{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: right;
 }
 .entreemcontato{
