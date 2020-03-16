@@ -8,19 +8,39 @@ base-de-cores {
     color: #eee;
     color: #c9c7c7;
 }
-body{
+/* body{
     margin: 0;
-}
-
+} */
+.inform{
+    text-align: center;
+    align-items: center;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+     display: flex;
+    }
 .inicio{
-    background-size: 375px;
-     background-image: url(../img/montanhasitio/bg02.jpg); */
-    /* background-color: black; */
-     
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
+     background-image: url(../img/montanhasitio/bg02.jpg);
+     /* height: 100vh; */
+     /* max-height: 300px; */
 }
-
+@media only screen and (max-width : 600px) {
+    .inicio{
+        background-size: 100%;
+        background-repeat: no-repeat;
+         background-image: url(../img/montanhasitio/bg02.jpg);
+         height: 50vh;
+    }
+    .inform {
+      /* background-color: lightblue; */
+     display: inline-block ;
+     /* max-width: 300px; */
+     /* flex-direction: row; */
+    /* color: #707172; */
+    }
+  }
 .inicio nav div img{
-    width: 100px;
+    width: 50px;
 }
 
 .nav{
@@ -28,6 +48,7 @@ body{
 }
 
 nav ul {
+    align-content: unset;
     display: inline-flex;
     list-style: none;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
@@ -36,9 +57,9 @@ nav ul {
     margin-top: 0;
     text-align: center;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
-    color: blanchedalmond;
+    color:#eee;
 }
-.fa-hiking{
+/* .fa-hiking{
     margin-top: 25px;
     font-size: 30px;
 }
@@ -47,12 +68,17 @@ nav ul {
 }
 .fa-swimmer{
     font-size: 30px;
+} */
+.icon{
+    font-size: 35px;
 }
-.atividades{
+
+
+/*.atividades{
     text-align: center;
 }
 
-.camping{
+ .camping{
     text-align: center;
 }
 
@@ -62,4 +88,22 @@ nav ul {
 
 .contato{
     text-align: center;
+} */
+
+.infor{
+    width: 300px;
+    margin: auto;
+}
+.contato{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    width: 260px;
+    text-align: right;
+    margin: auto;
+}
+.contato h1{
+    text-align: center;
+}
+.galeria img{
+    max-width: 275px;
+    align-items: center;
 }
