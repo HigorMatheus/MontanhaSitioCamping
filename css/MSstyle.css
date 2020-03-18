@@ -8,9 +8,9 @@ base-de-cores {
     color: #eee;
     color: #c9c7c7;
 }
-/* body{
+body{
     margin: 0;
-} */
+}
 .inform{
     text-align: center;
     align-items: center;
@@ -18,17 +18,29 @@ base-de-cores {
      display: flex;
     }
 .inicio{
-    /* background-size: 100%; */
-    /* background-repeat: no-repeat; */
-     background-image: url(../img/montanhasitio/bg02.jpg);
-     /* height: 100vh; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+     background-image: url(../img/montanhasitio/bg1.jpg);
+     height: 75vh;
      /* max-height: 300px; */
+     /* width: 75vh */
+}
+.descricao{
+    max-width: 300px;
+    margin: auto;
+    font-size: 18px;
 }
 @media only screen and (max-width : 600px) {
+    .descricao{
+        align-items: center;
+        width: 300px;
+        font-size: 10px;
+        margin: auto;
+    }
     .inicio{
         background-size: 100%;
         background-repeat: no-repeat;
-         background-image: url(../img/montanhasitio/bg02.jpg);
+         background-image: url(../img/montanhasitio/bg1.jpg);
          height: 50vh;
     }
     .inform {
@@ -38,7 +50,9 @@ base-de-cores {
      /* flex-direction: row; */
     /* color: #707172; */
     }
-  }
+}
+
+
 .inicio nav div img{
     width: 50px;
 }
@@ -46,7 +60,9 @@ base-de-cores {
 .nav{
     display: inline-flex ;
 }
-
+.nav button{
+    align-items: flex-start;
+}
 nav ul {
     align-content: unset;
     display: inline-flex;
@@ -58,42 +74,19 @@ nav ul {
     text-align: center;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     color:#eee;
+    mix-blend-mode: difference;
 }
-/* .fa-hiking{
-    margin-top: 25px;
-    font-size: 30px;
-}
-.fa-campground{
-    font-size: 30px;
-}
-.fa-swimmer{
-    font-size: 30px;
-} */
+
 .icon{
+    margin-top: 25px;
     font-size: 35px;
 }
 
 
-/*.atividades{
-    text-align: center;
-}
-
- .camping{
-    text-align: center;
-}
-
-.lazer{
-    text-align: center;
-}
-
-.contato{
-    text-align: center;
-} */
-
-.infor{
+/* .infor{
     width: 300px;
     margin: auto;
-}
+} */
 .contato{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     width: 260px;
@@ -106,4 +99,7 @@ nav ul {
 .galeria img{
     max-width: 275px;
     align-items: center;
+}
+footer{
+    background-color: coral;
 }
