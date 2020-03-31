@@ -20,17 +20,40 @@ body{
 .inicio{
     background-size: 100%;
     background-repeat: no-repeat;
-     background-image: url(../img/montanhasitio/bg1.jpg);
+     background-image: url(../img/montanhasitio/bg02.jpg);
      height: 75vh;
      /* max-height: 300px; */
      /* width: 75vh */
 }
 .descricao{
+    align-items: center;
     max-width: 300px;
     margin: auto;
     font-size: 18px;
 }
+.entreemcontato{
+    display: inline-flex;
+}
+.explore{
+    margin-top: 0;
+    text-align: center;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color:#eee;
+    font-size: xx-large;
+    mix-blend-mode: difference;
+}
 @media only screen and (max-width : 600px) {
+    .explore{
+        margin-top: 0;
+        text-align: center;
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+        color:#eee;
+        mix-blend-mode: difference;
+        font-size: unset;
+    }
+    .entreemcontato{
+        display: inline-block;
+    }
     .descricao{
         align-items: center;
         width: 300px;
@@ -40,8 +63,9 @@ body{
     .inicio{
         background-size: 100%;
         background-repeat: no-repeat;
-         background-image: url(../img/montanhasitio/bg1.jpg);
+         background-image: url(../img/montanhasitio/bg02.jpg);
          height: 50vh;
+        align-items: center;
     }
     .inform {
       /* background-color: lightblue; */
@@ -51,8 +75,6 @@ body{
     /* color: #707172; */
     }
 }
-
-
 .inicio nav div img{
     width: 50px;
 }
@@ -69,13 +91,7 @@ nav ul {
     list-style: none;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
-.explore{
-    margin-top: 0;
-    text-align: center;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    color:#eee;
-    mix-blend-mode: difference;
-}
+
 
 .icon{
     margin-top: 25px;
@@ -95,6 +111,7 @@ nav ul {
 }
 .contato h1{
     text-align: center;
+    margin: 10px;
 }
 .galeria img{
     max-width: 275px;
@@ -102,4 +119,8 @@ nav ul {
 }
 footer{
     background-color: coral;
+}
+
+.logofooter{
+  width: 100px;
 }
