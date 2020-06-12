@@ -10,9 +10,9 @@ base-de-cores {
 }
  
 html, body{
-    background-color: #c9c7c7;
+    background-color: #f3f3f3;
     margin: 0;
-  height: 100%;
+    height: 100%;
 }
 body{
   display: flex;
@@ -22,48 +22,67 @@ body{
     font-family:Tahoma, Geneva, Verdana, sans-serif; ;
     font-size: 20px;
 } */
+h1,h2,h3,h4,h5,h6,p,button,.contato .link{
+    font-family:Tahoma, Verdana, Geneva,  sans-serif;
+}
 .baner{ 
     background-image: url(/img/montanhasitio/IMG-20160515-WA0006.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    /* height: 15%;  */
+    /* height: 5%; */ 
  }
 
- .nav ul li{
+ /* .nav ul li{
      margin-right: 20px;
-     color: #000;
- }
+     color: #f3f3f3;
+ } */
 .explore{
-    /* position: relative; */
-    padding: 22%;
     text-align: center;
+    display: grid;
+    /* direction: ltr; */
     font-size: 30pt;
-    color:#eee;
-    font-size: unset;
+    color: #eee;
+    /* font-size: unset; */
     align-content: center;
+    align-items: center;
+    height: 200px;
+   
 }
-.nav, .footer{
-    background-color:#707172;
+.explore h1{
+    margin: 0;
+    /* padding: 10px; */
 }
-.nav {
-    height: 100px;
-    display: flex;
-    width: 100%;
-}
+.explore h1,
+    .icon{
+        font-size: 15pt;
+    }
+
 .content{
     flex: 1 0 auto;
-
-}
-.logo {
-    width: 80px;
-    padding: 15px;
 }
 .footer{
     flex-shrink: 0;
+    background-color:#707172;
 }
 footer .fab{
      padding: 25px;
      font-size: 20px;
+}
+.logo {
+    position: absolute;
+    width: 67px;
+    padding: 15px;
+    display: flex;
+    /* margin-right: auto; */
+    /* margin-left: 10px; */
+}
+
+.img-galeria{
+    margin-right: auto;
+    margin-left: auto;
+    width: 312px;
+    display: block;
+   
 }
 
 ul{
@@ -71,11 +90,12 @@ ul{
     margin-left: auto;
 }
 
-  button{
-    margin-right: auto;
-    margin-left: auto;
+button{
+    /* margin-right: auto; */
+    /* margin-left: auto; */
     background-color: #707172;
-    border-radius: 12px;
+    /* border-radius: 12px; */
+    color: #f3f3f3;
 }
 
 
@@ -89,7 +109,8 @@ ul{
 }
 
 .sobre{
-    background-color: #c9c7c7;
+    /* background-color: #c9c7c7; */
+    width: 100%;
     margin: 0;
     text-align: center;
 }
@@ -98,25 +119,26 @@ ul{
     margin: 10px;
 
 }
-
 .contato{
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
     width: 260px;
     text-align: right;
     margin: auto;
-    background-color:#c9c7c7;
+    /* background-color:#c9c7c7; */
 }
 .form{
     background-color: #f3f3f3;
     border-radius: 15px;
-    width: 280px;
+    width: 315px;
+    color: #707172;
 }
 
+.img-galeria{
+    width: 312px;
+}
 .item-form{
     padding: 5px;
-    font-size: 20px;
-    font-family:Tahoma, Verdana, Geneva,  sans-serif;
-    font: bold;
+    font-size: 18pt;
+    font:bold;
     color: #707172;
 }
 .entreemcontato{
@@ -130,19 +152,27 @@ ul{
 .localizacao{
     text-align: center;
 }
-.contato{
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    width: 260px;
-    text-align: right;
-    margin: auto;
- }
+
 
 input{
-    width: 136px;
-    border: none;
-    border-bottom-style: outset;
-    border-color:#0d0f0e;
+    /* width: 132px; */
+    /* height: 18pt; */
+    /* font-size: 18; */
+    /* border: none; */
+    /* border-bottom-style: outset; */
+    /* border-color: #707172; */
+    width: 132px;
+    height: 15pt;
+    border: #707172;
+    border-bottom-style: solid;
+    border-style: solid;
+    /* border-color: #707172; */
 }
+.localizacao{
+    color: #707172;
+}
+
+
 .contato h1{
     text-align: center;
     margin: 10px;
@@ -154,16 +184,73 @@ iframe{
     height: 200px;
 }
 
+.numbertext{
+    text-align: center;
+}
+.text{
+    text-align: center;
+}
+
+.mySlides{
+    /* display: flex; */
+    align-items: center;
+}
+.galeria{
+    /* width: 100%; */
+    /* display: flex; */
+    align-content: center;
+}
+
+.buton-modal{
+    align-items: center;
+    align-content: center;
+    /* margin: 10px; */
+    /* margin: 10% 3% 10% 0%; */
+    width: 15px;
+    background-image: url('/img/montanhasitio/IMG_0027.JPG');
+    background-size: 2px;
+}
+.prev{
+    margin: 10% 3% 10% 0%;
+}
+.next{
+    margin: 10% 0% 10% 3%;
+}
+.icon{
+    padding: 10px;
+}
+.indenimg{
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: -50px; */
+}
+.img-icon{
+   width: 40px;
+   padding: 5px;
+}
+.link{
+    color: black;
+    /* font-style: italic; */
+    text-decoration: none;
+}
 @media   (min-width : 600px) {
+    .img-galeria{
+        margin-right: auto;
+        margin-left: auto;
+        width: 312px;
+        display: block;
+    }
     .sobre{
         display: inline-flex;
         text-align: center;
     }
     .content{
         flex: 1 0 auto;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
+        /* max-width: 700px; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
         text-align: center;
     }
     /* .footer{
@@ -175,8 +262,33 @@ iframe{
         width: 600px;
         height: 420px;
     }
-    
-    .explore h1,.explore .icon{
-        font-size: 30pt;
+    .img-galeria{
+        width: 600px;
     }
+    .explore h1,
+    .icon{
+        font-size: 35pt;
+    }
+    .explore{
+        text-align: center;
+        display: grid;
+        /* direction: ltr; */
+        font-size: 30pt;
+        color: #eee;
+        /* font-size: unset; */
+        align-content: center;
+        align-items: center;
+        height: 400px;
+       
+    }
+    /* .slideshow-container{
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+    } */
+    .img-icon{
+        width: 80px;
+     }
 }
+
+
