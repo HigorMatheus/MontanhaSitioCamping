@@ -98,7 +98,9 @@ button{
     color: #f3f3f3;
 }
 
-
+.descricao h2{
+    font-size: 14pt;
+}
 .descricao{
     max-width: 300px;
     font-size: 18px;
@@ -120,26 +122,17 @@ button{
 
 }
 .contato{
-    width: 260px;
-    text-align: right;
-    margin: auto;
+    width: 190px;
+    /* text-align: center; */
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
     /* background-color:#c9c7c7; */
-}
-.form{
-    background-color: #f3f3f3;
-    border-radius: 15px;
-    width: 315px;
-    color: #707172;
 }
 
 .img-galeria{
     width: 312px;
-}
-.item-form{
-    padding: 5px;
-    font-size: 18pt;
-    font:bold;
-    color: #707172;
+    border-radius: 6px;
 }
 .entreemcontato{
     text-align: center;
@@ -155,28 +148,18 @@ button{
 
 
 input{
-    /* width: 132px; */
-    /* height: 18pt; */
-    /* font-size: 18; */
-    /* border: none; */
-    /* border-bottom-style: outset; */
-    /* border-color: #707172; */
-    width: 132px;
+    border: #707172;
     height: 15pt;
     border: #707172;
-    border-bottom-style: solid;
     border-style: solid;
-    /* border-color: #707172; */
 }
 .localizacao{
     color: #707172;
 }
 
-
 .contato h1{
     text-align: center;
-    margin: 10px;
-  
+    /* margin: 10px; */
 }
 
 iframe{
@@ -218,6 +201,7 @@ iframe{
 }
 .icon{
     padding: 10px;
+    font-size: 20pt;
 }
 .indenimg{
     text-align: center;
@@ -229,13 +213,56 @@ iframe{
 .img-icon{
    width: 40px;
    padding: 5px;
+    border-radius: 12px;
 }
 .link{
     color: black;
     /* font-style: italic; */
     text-decoration: none;
 }
+.form{
+        background-color: #f3f3f3;
+        border-radius: 15px;
+        width: 200px;
+        color: #707172;
+    }
+    .item-form{
+        padding: 5px;
+        font-size: 20pt;
+        font:bold;
+        color: #707172;
+        display: block;
+        text-align: center;
+    }
+.iten-entrecontato{
+    margin-left: auto;
+    margin-right: auto;
+}
+form h1{
+    font-size: 25pt;
+}
 @media   (min-width : 600px) {
+    .entreemcontato{
+        text-align: center;
+        display: inline-flex;
+    }
+    .form{
+        background-color: #f3f3f3;
+        border-radius: 15px;
+        width: 200px;
+        color: #707172;
+    }
+    .item-form{
+        padding: 5px;
+        font-size: 20pt;
+        font:bold;
+        color: #707172;
+        display: block;
+        text-align: center;
+    }
+    .descricao h2{
+        font-size: 20pt;
+    }
     .img-galeria{
         margin-right: auto;
         margin-left: auto;
@@ -264,6 +291,7 @@ iframe{
     }
     .img-galeria{
         width: 600px;
+        border-radius: 12px;
     }
     .explore h1,
     .icon{
@@ -280,6 +308,10 @@ iframe{
         align-items: center;
         height: 400px;
        
+    }
+    
+    .icon{
+        font-size: 40pt;
     }
     /* .slideshow-container{
         display: inline-flex;

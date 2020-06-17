@@ -131,7 +131,7 @@
                             <input name="checkout" type="date">
                         </div>
                         <div class="item-form">
-                            <label for="#"> TLEFONE </label>
+                            <label for="#"> TELEFONE </label>
                             <input name="telefone" type="tel">
                         </div>
                         <div class="item-form">
@@ -143,40 +143,36 @@
         </section>
         <section class="localizacao">
            <h1>Nossa localização </h1> 
-            <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.1393826492317!2d-46.884757785347546!3d-23.892625679793102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfb58d4412b019%3A0x26cf3f386976c895!2sMontanha%20Sitio%20Camping!5e1!3m2!1spt-BR!2sbr!4v1591643576414!5m2!1spt-BR!2sbr"
-            frameborder="0" 
-            style="border:0;" 
-            allowfullscreen="" 
-            aria-hidden="false" 
-            tabindex="0"
-            >
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.1393826492317!2d-46.884757785347546!3d-23.892625679793102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfb58d4412b019%3A0x26cf3f386976c895!2sMontanha%20Sitio%20Camping!5e1!3m2!1spt-BR!2sbr!4v1591643576414!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                
             </iframe>
-           
         </section>
     </section>
         <footer class="footer">
             <!-- <img  class="logo" src="/img/logo.png" alt=""> -->
             <div class="entreemcontato">
-                
-                <i  class="fab fa-facebook-f">
-                    <a class="link" href="http://www.facebook.com/Montanha-Sitio-Camping-206924906152797/">
-                        Montanha Sitio Camping
-                    </a>
-                </i>
-                <i class="fab fa-whatsapp"></i>
-                    <a class="link" href="https://api.whatsapp.com/send?phone=55">
-                        +55(11)90000-0000
-                    </a>
-                </i>
-                <i class="fab fa-instagram"> 
-                   <a class="link" href="http://https://www.instagram.com/montanha_sitio/">
-                         Montanha Sitio
-                    </a>
-                </i>
-                   
-                </i>
+                <div class="iten-entrecontato" >
+                    <i  class="fab fa-facebook-f">
+                        <a class="link" href="http://www.facebook.com/Montanha-Sitio-Camping-206924906152797/">
+                            Montanha Sitio Camping
+                        </a>
+                    </i>
+               </div>
+                <div class="iten-entrecontato" >
+                    <i class="fab fa-whatsapp"></i>
+                        <a class="link" href="https://api.whatsapp.com/send?phone=55">
+                            +55(11)90000-0000
+                        </a>
+
+                    </i>
+                </div>
+                <div class="iten-entrecontato" >
+                    <i class="fab fa-instagram"> 
+                        <a class="link" href="http://https://www.instagram.com/montanha_sitio/">
+                            Montanha Sitio
+                        </a>
+                    </i>
+                </div>
             </div>
             <!-- <div>
                 <ul>
@@ -188,69 +184,30 @@
         </footer>
 </body> 
     <script>
-        // var slideIndex = 1;
-        //     showSlides(slideIndex );
-
-        //     function plusSlides(n){
-        //         showSlides(slideIndex += n);
-        //     }
-
-        //     function currentSlide(n){
-        //         showSlides( slideIndex = n);
-        //     }
-
-        //     function showSlides(n){
-        //         var i ;
-        //         var slides = document.getElementsByName("mySlides");
-        //         var dots = dicument.getElementsByName("dot");
-        //         if (n > slides.length) { slideIndex = 1 }
-        //         if (n < 1) { slideIndex = slides.length }
-        //         for (i = 0; i < slides.length; i++) {
-        //                 slides[i].style.display = "none";
-        //             }
-                
-
-        //         // for ( i = 0 ; i<slides.length; i++ ){
-        //         //     slides[i].className = [i]. className.replec("active","");
-        //         // }
-        //         for (i = 0; i < dots.length; i++) {
-        //         dots[i].className = dots[i].className.replace(" active", "");
-        //         }
-                
-        //         slides[slidesIndex - 1].style.display="block";
-
-        //         dots[slidesIndex -1].className +="active";
-
-
-        //     }
         var slideIndex = 1;
-        showSlides(slideIndex);
+            showSlides(slideIndex);
 
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
             }
-            for (i = 0; i < dots.length; i++) {
+            function currentSlide(n){
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n){
+                var i ;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-
+        
     </script>
 </html>
