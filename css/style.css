@@ -289,10 +289,12 @@ form h1{
         width: 600px;
         height: 420px;
     }
+
     .img-galeria{
         width: 600px;
         border-radius: 12px;
     }
+    
     .explore h1,
     .icon{
         font-size: 35pt;
