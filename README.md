@@ -5,6 +5,6 @@
   Design UX UI : Adobe XD.
  
  Linquagens que foram usadas :  
- Front end :HHTML, CSS, JAVA SCRIPT, JQuery.
+ Front end : HTML, CSS, JAVA SCRIPT, JQuery.
  Beack end :PHP, PHPMailer.
  
