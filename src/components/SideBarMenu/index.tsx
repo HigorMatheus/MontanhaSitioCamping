@@ -31,7 +31,11 @@ export function SideBarMenu() {
       <Container>
         <nav>
           {pages.map((page) => (
-            <button type="button" onClick={() => handleNavigation(page.link)}>
+            <button
+              key={page.title}
+              type="button"
+              onClick={() => handleNavigation(page.link)}
+            >
               <p>{page.title}</p>
             </button>
           ))}
@@ -46,7 +50,11 @@ export function SideBarMenu() {
             <XIcon />
           </button>
           {pages.map((page) => (
-            <button type="button" onClick={() => handleNavigation(page.link)}>
+            <button
+              key={page.title}
+              type="button"
+              onClick={() => handleNavigation(page.link)}
+            >
               <p>{page.title}</p>
             </button>
           ))}
