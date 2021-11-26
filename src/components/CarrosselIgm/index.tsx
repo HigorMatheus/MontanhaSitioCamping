@@ -38,11 +38,6 @@ export function CarrosselIgm({ images }: CarrosselIgmProps) {
           &#10095;
         </button>
       </div>
-      {/* <aside>
-        {data.map((_, index) => (
-          <ActiveIndex isActive={index !== imageIndex} />
-        ))}
-      </aside> */}
     </Container>
   );
 }

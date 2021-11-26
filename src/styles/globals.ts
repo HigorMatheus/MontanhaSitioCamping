@@ -28,4 +28,9 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+
+
+
+
+
 `;

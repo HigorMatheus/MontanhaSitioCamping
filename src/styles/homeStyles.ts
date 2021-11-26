@@ -29,7 +29,7 @@ export const Highlights = styled.div`
       font-size: 2.4rem;
       line-height: 3rem;
       margin: 1.6rem auto;
-      @media (max-width: 500px) {
+      @media (max-width: 600px) {
         text-align: center;
       }
     }

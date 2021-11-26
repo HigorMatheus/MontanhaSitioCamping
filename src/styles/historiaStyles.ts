@@ -10,9 +10,13 @@ export const Content = styled.div`
   background: #c8f68c;
   border-radius: 16px;
   padding: 24px;
-`;
-
-export const ImgBanner = styled.img`
-  width: 100%;
-  border-radius: 16px;
+  align-items: center;
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
 `;
