@@ -4,6 +4,7 @@ import { Container, Img } from './styles';
 interface CarrosselIgmProps {
   images: string[];
 }
+
 export function CarrosselIgm({ images }: CarrosselIgmProps) {
   const [data, setData] = useState<string[]>([]);
   const [imageIndex, setImageIndex] = useState(0);
