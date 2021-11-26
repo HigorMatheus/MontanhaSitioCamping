@@ -1,4 +1,4 @@
-import { Facebook, Instagram, WhatsApp } from '@/assets/icons';
+import { Facebook, Instagram, WhatsApp } from '@/presentation/assets/icons';
 import { Logo } from '../Logo';
 import { SideBarMenu } from '../SideBarMenu';
 import { Container } from './styles';

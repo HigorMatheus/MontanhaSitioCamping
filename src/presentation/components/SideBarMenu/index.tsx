@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { MenuIcon } from '@/assets/icons/menu';
+import { MenuIcon, IconX } from '@/presentation/assets/icons';
 
-import { XIcon } from '@/assets/icons/x';
 import { Container, MobileMenu, ButtonMenu } from './styles';
 
 export function SideBarMenu() {
@@ -47,7 +46,7 @@ export function SideBarMenu() {
       <MobileMenu isActive={isShowMenu}>
         <section>
           <button type="button" onClick={handleMenu}>
-            <XIcon />
+            <IconX />
           </button>
           {pages.map((page) => (
             <button

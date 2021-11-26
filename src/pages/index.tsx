@@ -1,7 +1,12 @@
 import type { GetStaticProps, GetStaticPropsResult, NextPage } from 'next';
-import { Header } from '@/components/Header';
-import { Container, Content, ImgBanner, Highlights } from '@/styles/homeStyles';
-import { CarrosselIgm } from '@/components/CarrosselIgm';
+import { Header } from '@/presentation/components/Header';
+import {
+  Container,
+  Content,
+  ImgBanner,
+  Highlights,
+} from '@/presentation/styles/homeStyles';
+import { CarrosselIgm } from '@/presentation/components/CarrosselIgm';
 
 interface HomeProps {
   highlights: Array<{

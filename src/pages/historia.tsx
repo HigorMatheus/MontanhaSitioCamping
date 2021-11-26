@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 
-import { Container, Content } from '@/styles/historiaStyles';
-import { Header } from '@/components/Header';
+import { Container, Content } from '@/presentation/styles/historiaStyles';
+import { Header } from '@/presentation/components/Header';
 
 const Historia: NextPage = () => (
   <Container>
