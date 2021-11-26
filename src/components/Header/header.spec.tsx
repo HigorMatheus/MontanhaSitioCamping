@@ -6,6 +6,6 @@ describe('Header Component', () => {
     const { getByText } = render(<Header />);
 
     const text = getByText(/Montanha Sitio Camping/i);
-    expect(text).toBeInTheDocument();
+    expect(text).not.toBeInTheDocument();
   });
 });
