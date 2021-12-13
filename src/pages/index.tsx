@@ -1,33 +1,29 @@
 import type { GetStaticProps, GetStaticPropsResult, NextPage } from 'next';
-import { Header } from '@/presentation/components/Header';
-import {
-  Container,
-  Content,
-  ImgBanner,
-  Highlights,
-} from '@/presentation/styles/homeStyles';
-import { CarrosselIgm } from '@/presentation/components/CarrosselIgm';
+import { Header } from '@/components/Header';
+import { Container, Content, ImgBanner, Highlights } from '@/styles/homeStyles';
+import { CarrosselIgm } from '@/components/CarrosselIgm';
 
 interface HomeProps {
   highlights: Array<{
+    id: string;
     title: string;
-    image: Array<string>;
+    images?: Array<string>;
     description: string;
   }>;
 }
 const Home: NextPage<HomeProps> = ({ highlights }: HomeProps) => {
-  const data = highlights ? [...highlights] : [];
+  const data = highlights;
   return (
     <Container>
       <Header />
       <Content>
         <ImgBanner src="/banner.svg" alt="banner" />
         <Highlights>
-          {data.map(({ image, title, description }, index) => {
+          {data.map(({ images, title, description }, index) => {
             return (
-              <div key={String(index)}>
+              <div className="Highlight" key={String(index)}>
                 <h1>{title}</h1>
-                <CarrosselIgm images={image} />
+                <CarrosselIgm images={images} />
                 <aside>
                   <p>{description}</p>
                 </aside>
@@ -45,10 +41,16 @@ export default Home;
 export const getStaticProps: GetStaticProps = async (): Promise<
   GetStaticPropsResult<HomeProps>
 > => {
-  const highlights = [
+  const highlights: Array<{
+    id: string;
+    title: string;
+    images?: Array<string>;
+    description: string;
+  }> = [
     {
+      id: '1',
       title: 'Piscina',
-      image: [
+      images: [
         './piscina.png',
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFq1eJmubZ_FeAB46e7gjI8Xsm7T0SLWNgCTMPkKOQ4MhV_nPO6ZP-uSD1V2GQrD-2tH4&usqp=CAU',
         './piscina.png',
@@ -58,8 +60,9 @@ export const getStaticProps: GetStaticProps = async (): Promise<
         ' piscina 1,65 de profundidade, 10 de largura 12 de complemento. Piscina de agua natural',
     },
     {
+      id: '2',
       title: 'lago',
-      image: [
+      images: [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFq1eJmubZ_FeAB46e7gjI8Xsm7T0SLWNgCTMPkKOQ4MhV_nPO6ZP-uSD1V2GQrD-2tH4&usqp=CAU',
       ],
       description:

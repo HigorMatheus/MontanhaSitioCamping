@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { GlobalStyle } from '@/presentation/styles/globals';
+import { GlobalStyle } from '@/styles/globals';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>

@@ -16,11 +16,14 @@ export const ImgBanner = styled.img`
   width: 100%;
   border-radius: 16px;
 `;
+
 export const Highlights = styled.div`
-  div {
+  .Highlight {
     margin: 0 1.6rem;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     img {
       margin: 0 auto;
     }
@@ -29,6 +32,7 @@ export const Highlights = styled.div`
       font-size: 2.4rem;
       line-height: 3rem;
       margin: 1.6rem auto;
+      font-family: Roboto Arial, Helvetica, sans-serif;
       @media (max-width: 600px) {
         text-align: center;
       }
@@ -38,10 +42,15 @@ export const Highlights = styled.div`
       padding: 0.8rem;
       width: 38.4rem;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       p {
         font-size: 2.4rem;
+        font-weight: 200;
+        /* font-family: Roboto Arial, Helvetica, sans-serif; */
+        font-family: 'Lobster', cursive;
+        /* font-family: 'Roboto', sans-serif; */
       }
     }
   }

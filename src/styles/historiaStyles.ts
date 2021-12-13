@@ -14,9 +14,11 @@ export const Content = styled.div`
   h1 {
     font-size: 4rem;
     text-align: center;
+    font-family: 'Lobster', cursive;
   }
   p {
     margin-top: 1rem;
     font-size: 1.2rem;
+    font-family: Roboto Arial, Helvetica, sans-serif;
   }
 `;

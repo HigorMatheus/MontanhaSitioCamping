@@ -1,10 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+
   :root{
     /* a cada 1rem será considera 10px */
     font-size: 62.5%;
   }
+
   *{
     margin: 0;
     padding: 0;
@@ -27,10 +29,4 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 42.5%;
     }
   }
-
-
-
-
-
-
 `;

@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { MenuIcon, IconX } from '@/presentation/assets/icons';
+import { Facebook, IconX, Instagram, MenuIcon, WhatsApp } from '@/assets/icons';
+import { Logo } from '../Logo';
+import { Container, Menu, ButtonMenu, MobileMenu } from './styles';
 
-import { Container, MobileMenu, ButtonMenu } from './styles';
-
-export function SideBarMenu() {
+export const Header = () => {
   const route = useRouter();
   const [isShowMenu, setIsShowMenu] = useState(false);
   const handleMenu = () => {
@@ -26,8 +26,22 @@ export function SideBarMenu() {
     },
   ];
   return (
-    <>
-      <Container>
+    <Container>
+      <div>
+        <Logo />
+        <h1>Montanha Sitio Camping</h1>
+
+        <span>
+          <Instagram />
+          <Facebook />
+          <WhatsApp />
+          <ButtonMenu onClick={handleMenu}>
+            <MenuIcon />
+          </ButtonMenu>
+        </span>
+      </div>
+      {/* <SideBarMenu /> */}
+      <Menu>
         <nav>
           {pages.map((page) => (
             <button
@@ -39,10 +53,8 @@ export function SideBarMenu() {
             </button>
           ))}
         </nav>
-      </Container>
-      <ButtonMenu onClick={handleMenu}>
-        <MenuIcon />
-      </ButtonMenu>
+      </Menu>
+
       <MobileMenu isActive={isShowMenu}>
         <section>
           <button type="button" onClick={handleMenu}>
@@ -59,6 +71,6 @@ export function SideBarMenu() {
           ))}
         </section>
       </MobileMenu>
-    </>
+    </Container>
   );
-}
+};
