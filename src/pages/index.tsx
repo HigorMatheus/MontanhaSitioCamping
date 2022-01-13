@@ -1,4 +1,5 @@
 import type { GetStaticProps, GetStaticPropsResult, NextPage } from 'next';
+import Image from 'next/image'
 import { Header } from '@/components/Header';
 import { Container, Content, ImgBanner, Highlights } from '@/styles/homeStyles';
 import { CarrosselIgm } from '@/components/CarrosselIgm';
