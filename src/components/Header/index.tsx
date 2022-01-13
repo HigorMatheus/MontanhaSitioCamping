@@ -38,7 +38,7 @@ export const Header = () => {
           <ButtonMenu onClick={handleMenu}>
             <MenuIcon />
           </ButtonMenu>
-          <MenuIcon />
+          <MenuIcon  onClick={handleMenu} />
         </span>
       </div>
       {/* <SideBarMenu /> */}
