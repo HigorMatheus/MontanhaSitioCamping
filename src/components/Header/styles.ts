@@ -83,7 +83,7 @@ export const ButtonMenu = styled.button`
   background: none;
   cursor: pointer;
   @media (min-width: 700px) {
-    display: none;
+    /* display: none; */
   }
 `;
 
