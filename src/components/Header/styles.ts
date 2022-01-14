@@ -78,12 +78,12 @@ interface Props {
   isActive: boolean;
 }
 export const ButtonMenu = styled.button`
-  width: 0;
+  width: 20px;
   border: none;
   background: none;
   cursor: pointer;
   @media (min-width: 700px) {
-    /* display: none; */
+    display: none;
   }
 `;
 
