@@ -88,6 +88,7 @@ export const ButtonMenu = styled.button`
 `;
 
 export const MobileMenu = styled.div<Props>`
+  z-index: 999999999;
   @media (min-width: 700px) {
     display: none;
   }
